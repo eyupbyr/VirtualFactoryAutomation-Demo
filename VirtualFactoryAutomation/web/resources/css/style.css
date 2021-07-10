@@ -1,0 +1,157 @@
+body {
+    color: #000;
+    overflow-x: hidden;
+    height: 100%;
+    //background-color: #B0BEC5;
+    background-repeat: no-repeat
+}
+.homepage{
+    background-image: url("https://t3.ftcdn.net/jpg/03/55/60/70/360_F_355607062_zYMS8jaz4SfoykpWz5oViRVKL32IabTP.jpg");
+    background-size: 100%;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.login-button{
+    width: 420px;
+    height: 70px;
+    position:relative;
+    top:300px;
+    left:200px;
+    font-size: 32px;
+}
+
+.card0 {
+    
+    border-radius: 0px
+}
+
+.card2 {
+    margin: 0px 40px
+}
+
+.logo {
+    width: 200px;
+    height: 100px;
+    margin-top: 20px;
+    margin-left: 35px
+}
+
+.image {
+    width: 430px;
+    height: 340px
+}
+
+a.nav-link{
+    color:white;
+}
+
+a.nav-link:hover{
+    color:yellow;
+}
+
+.border-line {
+    border-right: 2px solid #EEEEEE
+}
+
+.line {
+    height: 1px;
+    width: 45%;
+    background-color: #E0E0E0;
+    margin-top: 10px
+}
+
+.text-sm {
+    font-size: 14px !important
+}
+
+
+input,
+textarea {
+    padding: 10px 12px 10px 12px;
+    border-radius: 2px;
+    margin-bottom: 5px;
+    margin-top: 2px;
+    width: 100%;
+    box-sizing: border-box;
+    color: #2C3E50;
+    font-size: 14px;
+    letter-spacing: 1px
+}
+
+a {
+    color: inherit;
+    cursor: pointer
+}
+
+.btn-blue {
+    background-color: #1A237E;
+    width: 150px;
+    color: #fff;
+    border-radius: 2px
+}
+
+.btn-blue:hover {
+    background-color: #000;
+    cursor: pointer
+}
+
+.bg-blue {
+    color: #fff;
+    background-color: #1A237E
+}
+
+.customer-products {
+    float: left;
+    margin: 20px 0px 0px 180px;
+    font-size: 20px;
+    text-align: center;
+}
+
+span.fs-5.d-none.d-sm-inline.mt-4{
+    border-bottom: 3px solid grey;
+    padding: 10px 0px; 
+}
+
+span.ms-1.d-none.d-sm-inline{
+    color: #12dbe9;
+}
+
+span.ms-1.d-none.d-sm-inline:hover{
+    color: yellow;
+}
+
+.customer-background-image{
+    background-image: url("data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw0ICAcIDQ0PBwcIBw0HBwcHDQ8IDQcNFREWFhURExMYHSggGBolJx8fITEhJSkrLi4uFx8zODMsNygtLisBCgoKDQ0NDg0NDysZFRkrNzcrLTcrKysrKysrNzctLSsrKy03KysrLSsrKzcrKysrKysrKysrKysrKysrKysrK//AABEIALEBHAMBIgACEQEDEQH/xAAZAAADAQEBAAAAAAAAAAAAAAAAAQIDBAb/xAAcEAEBAQEBAQEBAQAAAAAAAAAAEQESAhMDQVH/xAAXAQEBAQEAAAAAAAAAAAAAAAAAAQID/8QAFREBAQAAAAAAAAAAAAAAAAAAABH/2gAMAwEAAhEDEQA/APb8jlvwOHeuTDkct+BwUYcjlvwOCjDkct+BwUYcjlvwOCjDk+G+eDzwUYcHw6M/NWfmUc2fmfzdXzP5pSOX5j5uv5jgpHJ8x83XwXzKRyfMt8Ov5l8ykcfBcOvfzTv5rSObguXRvguCjDkct+BwUYcjlvwOCjDkct+BwVGHI5b8DgqsORy34HBRtyOWsERWXI5awQGXI5awoDPkctIeYgy4VnhrnlWeQZZ4VnhrnlWeSjLPCuGuYIis+By1ggMuRy1ggMuRy1ggMuS5bQoDHfCd8OiFuA5t8J3w6d8p3ytRzb4Ll0b5TvkGPI5awRRlyOWkEBnyOWkEBnyOWkOAqCLgiCIIuCAiCLggIh5isxWYBZis8qzyrMRU5iocOAmCKggJgioATBFQQEwRUEBMEVBATBFCAiJ3GsLcBjuJ3G24jcBlCjTcKKiIIuCAiCLggIgi4IBhUOIqSXBAQcVBALMVmHmLzALMVDzDiKmCKggJhw4cBMEXyfIIgi+T5BnBGnJcgzgi98lARBFwoCYIqCAjcTuNYncVGO4mNdxO4CAqCAkKggINUEBUEOHATBFQQEw8w4cAZiswZisxFEBnAScOHmIFmKzDzFQEw4cMEhQBIigCIW4sQGe4mNdxO4CCXCiiYW4uFuAz3EbjXcTuCM4IrcEUTBFQQEwRUEBQVBEVMEVBATDzDhwBmKzBiswChw4MxFEVmDMVAKBUEBIVBASFQQEhUEBIVBASNxUKAjcTuNNxO4CINxULcERuJ3Gm4ncUZ7gVuCAkKggJgioICoIqCIJgioICYZw8wBmKwsxWAIeA8FGKGGBAwBAwBAwBAwBAwBAwCdwtxadBG4UXuECNxOr3E7giIIqCAmCKggJgioICoIqHARBFwQEQ4qCAUMHgoVmA8A8wQ8wRAoIcEAoIcEAoIcEAoIcEAoIcEAoIcEAi3FQoCNKL3E6onUxZQEQRcEERBFwQEQRcEBUEVBBUwRUEBMEVBATDhwADwQ8AwMUgkKggJCoICTOCAkKggJM4IBA4ICS1RAnUrIEQRUEUTBFQQEwRUEBMEVBAT9cH0xy9jsiV1fTB9McvY7IV1fTB9McvY7Itdf0wfTHJ2OyFdefph/THJ2fZCuzPeH3jkz9F57IOnodMM9n0g26HTLodA16HTLodA16HTLodA16HTLodA16HTHot9g231id94w32nfawdHeDvHN2XZB094O8c/Y7IOnvB3jm7HZB094O8c3Y7IOnvB3jm7HZBydjtzfQfRtiunsdub6D6BXT2O3N9D+iDo7Hbn+g+gro7Ptzdjsg6s/Rfn9HH2efoQd3n9FZ7cWfovP0SFdnZ9uXP0PP0ItdPQ6c/Y7CujodOfsdhXR2W+3Pv6J39CFdG/ojf0c+/ojf0WJXRv6F9HNv6DshXR2O3P2OyFdHY7c/Y7B0dn25+x2FdHY7c/Y7IOjsdufsdg4QA0yeAADAAAGAH+gAU8AAK8rwBBpiwEDwwBQQAFv9T6IAjU7/AEBUIAKGAAAAAABA8AAAAKP/2Q==");
+    background-size: 100%;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.personnel-background-image{
+    background-image: url("https://www.solidbackgrounds.com/images/1920x1080/1920x1080-light-blue-solid-color-background.jpg");
+    background-size: 100%;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.personnel-products-inputbox{
+    width:85%;
+}
+
+@media screen and (max-width: 991px) {
+    
+    .image {
+        width: 300px;
+        height: 220px
+    }
+
+    .border-line {
+        border-right: none
+    }
+
+    .card2 {
+        border-top: 1px solid #EEEEEE !important;
+        margin: 0px 15px
+    }
+}

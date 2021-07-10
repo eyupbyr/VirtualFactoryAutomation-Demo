@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Facelet Title</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous"/>
+        <link rel="stylesheet" href="resources/css/style.css"/>
+    </h:head>
+    <h:body>
+        <nav style="padding-left: 100px; background-color:#002959;" class="navbar navbar-expand-lg navbar-top">
+            <a class="navbar-brand ms-5" href="#">
+                <img src="resources/images/logo.png" width="100px" height="90px"></img>
+            </a>
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                     <div class="navbar-nav ms-auto" style="margin-right: 100px">
+                          <a class="nav-link mx-4" href="customer_products.xhtml">Products</a>
+                          <a class="nav-link mx-4" href="customer_orders.xhtml">Orders</a>
+                          <a class="nav-link mx-4" href="customer_cart.xhtml">Shopping Cart</a>
+                          <a style="color: #810000; background-color: #eeebdd; border-radius: 8px;" class="nav-link mx-4" href="index.xhtml">Logout</a>
+                     </div>
+                </div>
+             </div>
+        </nav>
+        
+        <div class="customer-background-image">
+        <h1 class="text-center mb-3 pt-4">Products</h1>
+        <h:dataTable rowClasses="customer-products"  columnClasses="customer-product-column" value="#{Customer.ListProducts()}" var="myvariable"
+        cellpadding="10" cellspacing="3" >
+ 
+            <h:column>
+            #{myvariable.PRODUCT_NAME} <br></br><br></br>
+            <img src="#{myvariable.IMAGE_PATH}" width="220px" height="250px"></img><br></br><br></br><br></br>
+            <i>#{myvariable.PRODUCT_TYPE}</i><br></br>
+            <h:form>
+                <h:commandButton value="Add To Cart" action="#{Customer.AddToCart(myvariable.PRODUCT_ID,
+                                                               myvariable.PRODUCT_NAME, 1)}"/>
+            </h:form>
+            </h:column>
+
+        </h:dataTable>
+        </div>
+    </h:body>
+</html>
+
